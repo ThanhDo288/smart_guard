@@ -1,0 +1,70 @@
+libcamera-hello -t0
+-- tạo môi trường ảo , bật môi trường ảo
+source myvenv/bin/activate
+source /home/edabk/myvenv/bin/activate
+pip install opencv-python-headless
+deactivate
+-- xóa môi trường ảo 
+rm -r myvenv
+
+
+sudo apt update && sudo apt upgrade
+sudo apt install libcap-dev libatlas-base-dev ffmpeg libopenjp2-7
+sudo apt install libcamera-dev
+sudo apt install libkms++-dev libfmt-dev libdrm-dev
+
+https://forums.raspberrypi.com/viewtopic.php?t=361758
+( cài libcamera trong môi trường ảo )
+Cài đặt các thư viện phát triển GTK+:
+sh
+Copy code
+sudo apt-get install libgtk-3-dev
+sudo apt-get install pkg-config
+
+cài cv2 có gui ( để hiển thị được hình ảnh lên ) 
+pip3 uninstall opencv-python
+pip3 install opencv-python
+
+thư viện đầy đủ cv2
+ pip3 install opencv-contrib-python
+pip install PyQt5
+
+********** sử dung cam*****************8
+https://www.raspberrypi.com/documentation/computers/camera_software.html#libcamera-and-rpicam-apps
+-----------------------------------------------------------------
+
+1. Câu lệnh ls
+
+ls -l  # Liệt kê với đầy đủ thông tin chi tiết
+ls -a  # Liệt kê tất cả các tệp, bao gồm cả tệp ẩn
+-----------------------------------------------------------------
+2. Câu lệnh cd
+
+cd /path/to/directory  # Chuyển đến thư mục chỉ định
+cd ..  # Quay lại thư mục cha
+
+-----------------------------------------------------------------
+3. Câu lệnh pwd
+
+pwd
+
+
+-----------------------------------------------------------------
+4. Câu lệnh cp
+
+cp source.txt destination.txt  # Sao chép tệp
+cp -r source_dir dest_dir  # Sao chép thư mục
+-----------------------------------------------------------------
+5. Câu lệnh mv
+
+mv old_name.txt new_name.txt  # Đổi tên tệp
+mv file.txt /path/to/directory/  # Di chuyển tệp
+
+-----------------------------------------------------------------
+6. Câu lệnh rm
+
+rm file.txt  # Xóa tệp
+rm -r directory/  # Xóa thư mục và nội dung của nó
+-----------------------------------------------------------------
+***************** cài thư viện paho-mqtt compile source code: sudo apt-get install python3-paho-mqtt *********************
+
